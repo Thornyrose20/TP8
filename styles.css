@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Akaya+Kanadaka&family=Roboto&display=swap');
+
+*{
+  box-sizing:border-box;
+}
+
+
+body {
+  background-color: #e0a890;
+  /** border-style: dashed; **/
+  margin: 0;
+  padding:0;
+}
+
+div{
+  display:inline-block;
+  width:100vw;
+  padding:1vw;
+}
+
+h1 {
+  font-family: 'Akaya Kanadaka', cursive;
+  color: #63372c;
+  font-style: italic;
+  font-size: 45px;
+}
+
+h4 {
+  margin-bottom: 0;
+  font-weight: bold;
+  font-family: 'Akaya Kanadaka', cursive;
+  font-size: 25px;
+  
+}
+
+ul,
+ol {
+  margin-top: 0;
+}
+
+/** hidding list items **/
+ul,ol{
+  display:none;
+}
+
+ul.showMe, 
+ol.showMe{
+  display:block;
+}
+
+.copyright {
+  font-family: Arial;
+  font-size: 9px;
+  font-style: italic;
+}
+
+/** when window size changes **/
+
+
+
+
+/** Don't add px when adjusting line height **/
+
+li {
+  font-family: 'Caveat', cursive;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/****** To make bold element a different color use this code ***/
+
+b,
+strong {
+  color: red;
+}
+
+/**** adding image above recipe title ***/
+div#browniepic{
+  background-image: url(Images/brownie.jpg);
+  background-size:cover;
+  padding-top: 10vh;
+  padding-bottom:10vh;
+  background-position:center,center;
+  width:auto;
+  height:30vh;
+  float:none;
+ }
+
+div#browniepic h1{
+  font-family:'Akaya Kanadaka', cursive;
+  font-weight:bolder;
+  font-size:80px;
+  text-align:center;
+  color:black;
+  line-height:4px;
+}
+
+/*** new javascript class that has been added **/
+div#browniepic h1.title{
+  Color:white;
+  font-size:70px;
+}
+
+
+@media screen and (orientation: landscape) {
+  
+  div{
+    width: calc(100vw/3 - 1vw);  
+    float: left;
+  }
+  
+}
+
+/******FOOTER AREA*****/
+
+#footer{
+  position:relative;
+  padding:0vh;
+}
+
+
+
+
+
+
+/****** Navigation Bar ***/
+/****
+#nav{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100vw;
+  height: 3.1rem;
+  background: #6C5A49;
+}
+
+#nav ul{
+ list-style:none;
+  margin:0;
+  padding:0;
+}
+
+#nav li{
+  position:relative;
+  display:block;
+  float:left;
+  background:#6C5A49;
+  padding: 1rem;
+}
+
+#nav li:hover{
+  background:#BDD5EA;
+}
+
+#nav a{
+  color:black;
+  text-decoration:none;
+  font-family:'Caveat', cursive;
+  white-space:nowrap;
+}
+
+#nav ul li ul{
+  display:block;
+  position:absolute;
+  margin-top:1ren;
+  left:0;
+  height:0;
+  overflow:hidden;
+  transition: height 0.25s;
+}
+
+#nav ul li:hover ul{
+  height:10rem;
+  overflow:display;
+}
+***/
