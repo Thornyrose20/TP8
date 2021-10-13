@@ -36,6 +36,23 @@ window.onload = function() {
 
 
 
+//new recipe object
+function Recipe(recipeName,contributorName,imageURL,ingredientsFilename,equipmentFilename,directionsFilename){
+  
+  this.recipe = recipeName;
+  this.contributor = contributorName;
+  this.img = imageURL;
+  this.ingredients = ingredientsFilename;
+  this.equipment = equipmentFilename;
+  this.direction = directionsFilename;
+  
+}
+
+
+
+
+
+
 // function to asynchronously fetch file contents from path/URL "fromFile" 
 // and insert them in the DOM object found with "whereTo" -- note this
 // uses document.querySelector, so use CSS notation on "whereTo"
