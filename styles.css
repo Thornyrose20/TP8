@@ -78,7 +78,7 @@ strong {
 
 /**** adding image above recipe title ***/
 div#browniepic{
-  background-image: url(Images/brownie.jpg);
+  background-image:none; /** url(Images/brownie.jpg); */
   background-size:cover;
   padding-top: 10vh;
   padding-bottom:10vh;
@@ -126,7 +126,7 @@ div#browniepic h1.title{
 
 
 /****** Navigation Bar ***/
-/****
+
 #nav{
   position:absolute;
   top:0;
@@ -175,4 +175,4 @@ div#browniepic h1.title{
   height:10rem;
   overflow:display;
 }
-***/
+
