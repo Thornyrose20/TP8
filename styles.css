@@ -126,7 +126,6 @@ div#browniepic h1.title{
 
 
 /****** Navigation Bar ***/
-
 #nav{
   position:absolute;
   top:0;
@@ -159,6 +158,10 @@ div#browniepic h1.title{
   text-decoration:none;
   font-family:'Caveat', cursive;
   white-space:nowrap;
+  font-size:30px;
+  line-height:0.5;
+  padding: 1rem;
+  
 }
 
 #nav ul li ul{
