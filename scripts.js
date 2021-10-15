@@ -31,6 +31,9 @@ window.onload = function() {
     BrookeBombshellBrownie.displayRecipe();
   }
  
+  document.querySelector("#r2").onclick = function(){
+    ChocolateChipCookies.displayRecipe();
+  }
     
 }// end of window onload
 
@@ -57,11 +60,23 @@ function Recipe(recipeName,contributorName,imageURL,ingredientsFilename,equipmen
   loadFileInto(this.direction,"#box3 ol");  
   }
   
+  this.displayRecipe = function(){
+    
+    document.querySelector("#browniepic h1").innerHTML = this.recipe;
+    document.querySelector("#Contributor").innerHTML = this.contributor;
+    document.querySelector("#browniepic").style.backgroundImage = "url(" + this.img + ")";
+    
+  loadFileInto(this.ingredients,"#box1 ul");
+  loadFileInto(this.equipment,"#box2 ul");
+  loadFileInto(this.direction,"#box3 ol");  
+    
+  }
+  
 }
 
 
 BrookeBombshellBrownie = new Recipe("Brooke's Bombshell Brownies","Roselynne","Images/brownie.jpg","ingredients.html","equipment.html","directions.html");
-ChocolateChipCookies = new Recipe("Chocolate Chip Cookies","Aida Must","Images Aida/chocolate.jpg","ingredientsA.html","equipmentA.html","directionsA.html");
+ChocolateChipCookies = new Recipe("Chocolate Chip Cookies","Aida","ImagesA/chocolate.jpg","ingredientsA.html","equipmentA.html","directionsA.html");
 
 
 

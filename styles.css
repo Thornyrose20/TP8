@@ -103,14 +103,14 @@ div#browniepic h1.title{
 }
 
 
-@media screen and (orientation: landscape) {
+/**@media screen and (orientation: landscape) {
   
   div{
     width: calc(100vw/3 - 1vw);  
     float: left; 
   }
   
-}
+} **/
 
 /******FOOTER AREA*****/
 
