@@ -26,11 +26,11 @@ window.onload = function() {
  
   document.querySelector("#footer").innerHTML += "<p>This is just a test webpage</p>";
     
-  loadFileInto("ingredients.html","#box1 ul");
-  loadFileInto("equipment.html","#box2 ul");
-  loadFileInto("directions.html","#box3 ol");
-  
-  
+
+  document.querySelector("#r1").onclick = function(){
+    BrookeBombshellBrownie.displayRecipe();
+  }
+ 
     
 }// end of window onload
 
@@ -46,8 +46,16 @@ function Recipe(recipeName,contributorName,imageURL,ingredientsFilename,equipmen
   this.equipment = equipmentFilename;
   this.direction = directionsFilename;
   
+  this.displayRecipe = function(){
+    
+    document.querySelector("browniepic h1").innerHTML = this.recipe;
+    
+  }
+  
 }
 
+
+BrookeBombshellBrownie = new Recipe("Brooke's Bombshell Brownies","Roselynne","Images/brownie.jpg","ingredients.html","equipment.html","directions.html");
 
 
 
