@@ -100,7 +100,6 @@ div#browniepic h1{
 /*** new javascript class that has been added **/
 div#browniepic h1.title{
   Color:white;
-  font-size:70px;
 }
 
 
@@ -108,7 +107,7 @@ div#browniepic h1.title{
   
   div{
     width: calc(100vw/3 - 1vw);  
-    float: left;
+    float: left; 
   }
   
 }
